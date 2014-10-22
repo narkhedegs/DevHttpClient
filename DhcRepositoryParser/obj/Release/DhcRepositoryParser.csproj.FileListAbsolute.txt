@@ -2,5 +2,6 @@ C:\GSN\Microsoft\DhcRepositoryParser\DhcRepositoryParser\bin\Release\DhcReposito
 C:\GSN\Microsoft\DhcRepositoryParser\DhcRepositoryParser\bin\Release\DhcRepositoryParser.pdb
 C:\GSN\Microsoft\DhcRepositoryParser\DhcRepositoryParser\bin\Release\Newtonsoft.Json.dll
 C:\GSN\Microsoft\DhcRepositoryParser\DhcRepositoryParser\bin\Release\Newtonsoft.Json.xml
+C:\GSN\Microsoft\DhcRepositoryParser\DhcRepositoryParser\obj\Release\DhcRepositoryParser.csprojResolveAssemblyReference.cache
 C:\GSN\Microsoft\DhcRepositoryParser\DhcRepositoryParser\obj\Release\DhcRepositoryParser.dll
 C:\GSN\Microsoft\DhcRepositoryParser\DhcRepositoryParser\obj\Release\DhcRepositoryParser.pdb

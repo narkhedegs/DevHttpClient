@@ -6,13 +6,13 @@
     <title>$title$</title>
     <authors>$author$</authors>
     <owners>$author$</owners>
-    <licenseUrl></licenseUrl>
+    <licenseUrl>https://raw.githubusercontent.com/narkhedegs/DhcRepositoryParser/master/LICENSE.md</licenseUrl>
     <projectUrl>https://github.com/narkhedegs/DhcRepositoryParser</projectUrl>
-    <iconUrl></iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/narkhedegs/DhcRepositoryParser/master/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>DhcRepositoryParser parses the repository json file used by Dev Http Client (DHC) Chrome Extension into Strongly Typed .NET Objects.</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
-    <copyright>Copyright 2014</copyright>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright © narkhedegs@gmail.com 2014</copyright>
     <tags>dev-http-client parser</tags>
   </metadata>
 </package>
