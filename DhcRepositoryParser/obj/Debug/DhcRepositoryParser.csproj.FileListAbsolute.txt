@@ -1,7 +1,0 @@
-C:\GSN\Microsoft\DhcRepositoryParser\DhcRepositoryParser\bin\Debug\DhcRepositoryParser.dll
-C:\GSN\Microsoft\DhcRepositoryParser\DhcRepositoryParser\bin\Debug\DhcRepositoryParser.pdb
-C:\GSN\Microsoft\DhcRepositoryParser\DhcRepositoryParser\bin\Debug\Newtonsoft.Json.dll
-C:\GSN\Microsoft\DhcRepositoryParser\DhcRepositoryParser\bin\Debug\Newtonsoft.Json.xml
-C:\GSN\Microsoft\DhcRepositoryParser\DhcRepositoryParser\obj\Debug\DhcRepositoryParser.csprojResolveAssemblyReference.cache
-C:\GSN\Microsoft\DhcRepositoryParser\DhcRepositoryParser\obj\Debug\DhcRepositoryParser.dll
-C:\GSN\Microsoft\DhcRepositoryParser\DhcRepositoryParser\obj\Debug\DhcRepositoryParser.pdb
