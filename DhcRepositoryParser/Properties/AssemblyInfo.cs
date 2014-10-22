@@ -1,14 +1,13 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("DhcRepositoryParser")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("DhcRepositoryParser parses the repository json file used by Dev Http Client (DHC) Chrome Extension into Strongly Typed .NET Objects.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("GSN")]
+[assembly: AssemblyCompany("narkhedegs@gmail.com")]
 [assembly: AssemblyProduct("DhcRepositoryParser")]
 [assembly: AssemblyCopyright("Copyright © narkhedegs@gmail.com 2014")]
 [assembly: AssemblyTrademark("")]
