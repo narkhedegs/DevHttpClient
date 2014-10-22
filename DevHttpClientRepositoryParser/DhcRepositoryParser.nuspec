@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://raw.githubusercontent.com/narkhedegs/DhcRepositoryParser/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/narkhedegs/DhcRepositoryParser</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/narkhedegs/DhcRepositoryParser/master/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>DhcRepositoryParser parses the repository json file used by Dev Http Client (DHC) Chrome Extension into Strongly Typed .NET Objects.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright © narkhedegs@gmail.com 2014</copyright>
+    <tags>dev-http-client parser</tags>
+  </metadata>
+</package>
