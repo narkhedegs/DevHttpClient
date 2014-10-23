@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DevHttpClientRepositoryParser")]
-[assembly: AssemblyDescription("DevHttpClient RepositoryParser parses the repository json file used by Dev Http Client (DHC) Chrome Extension into Strongly Typed .NET Objects.")]
+[assembly: AssemblyTitle("DevHttpClientRepositoryRunner")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("narkhedegs@gmail.com")]
-[assembly: AssemblyProduct("DevHttpClientRepositoryParser")]
+[assembly: AssemblyProduct("DevHttpClientRepositoryRunner")]
 [assembly: AssemblyCopyright("Copyright © narkhedegs@gmail.com 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("53a77cd0-c2ea-4d32-9f86-9112ff40f296")]
+[assembly: Guid("3124d109-edc7-409e-a214-056b0568d266")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace DevHttpClient.DataObjects
 {
@@ -12,7 +13,10 @@ namespace DevHttpClient.DataObjects
         public DateTime? LastModifiedDateTime { get; set; }
         
         public string Name { get; set; }
-        public string Type { get; set; }
+
+        [JsonConverter(typeof(StringEnumConverter))]
+        public NodeType Type { get; set; }
+
         public List<Header> Headers { get; set; }
 
         [JsonConverter(typeof(MethodConverter))]

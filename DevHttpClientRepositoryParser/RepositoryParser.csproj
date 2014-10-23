@@ -44,14 +44,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataObjects\Body.cs" />
-    <Compile Include="DataObjects\DevHttpClientRepository.cs" />
+    <Compile Include="DataObjects\BodyType.cs" />
+    <Compile Include="DataObjects\NodeType.cs" />
+    <Compile Include="DataObjects\Repository.cs" />
     <Compile Include="DataObjects\Header.cs" />
     <Compile Include="DataObjects\Node.cs" />
     <Compile Include="DataObjects\Query.cs" />
     <Compile Include="DataObjects\QueryItem.cs" />
     <Compile Include="DataObjects\Scheme.cs" />
     <Compile Include="DataObjects\Uri.cs" />
-    <Compile Include="DevHttpClientRepositoryParser.cs" />
+    <Compile Include="RepositoryParser.cs" />
     <Compile Include="MethodConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -1,8 +1,13 @@
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+
 namespace DevHttpClient.DataObjects
 {
     public class Body
     {
         public string TextBody { get; set; }
-        public string BodyType { get; set; }
+
+        [JsonConverter(typeof(StringEnumConverter))]
+        public BodyType BodyType { get; set; }
     }
 }

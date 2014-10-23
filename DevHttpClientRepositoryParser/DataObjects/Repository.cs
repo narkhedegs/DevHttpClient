@@ -2,7 +2,7 @@
 
 namespace DevHttpClient.DataObjects
 {
-    public class DevHttpClientRepository
+    public class Repository
     {
         public int Version { get; set; }
         public List<Node> Nodes { get; set; }
