@@ -50,7 +50,6 @@
   <ItemGroup>
     <Compile Include="DebuggerShim.cs" />
     <Compile Include="dev_http_client_repository_parser_specifications.cs" />
-    <Compile Include="dev_http_client_repository_runner_specifications.cs" />
     <Compile Include="Helpers\EmbeddedResourceHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -58,10 +57,6 @@
     <ProjectReference Include="..\DevHttpClientRepositoryParser\RepositoryParser.csproj">
       <Project>{d2d90db6-84ed-4872-9fe1-9aae9981b8ef}</Project>
       <Name>RepositoryParser</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DevHttpClientRepositoryRunner\RepositoryRunner.csproj">
-      <Project>{0bde1421-128c-48d4-a3b9-2008b04f13cf}</Project>
-      <Name>RepositoryRunner</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

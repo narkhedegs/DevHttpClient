@@ -6,16 +6,16 @@ namespace DevHttpClient
 {
     public interface IRepositoryParser
     {
-        Repository Parse(string devHttpClientRepositoryJson);
+        Repository Parse(string repositoryJson);
     }
 
     public class RepositoryParser : IRepositoryParser
     {
-        public Repository Parse(string devHttpClientRepositoryJson)
+        public Repository Parse(string repositoryJson)
         {
-            if (string.IsNullOrEmpty(devHttpClientRepositoryJson)) throw new ArgumentNullException("devHttpClientRepositoryJson");
+            if (string.IsNullOrEmpty(repositoryJson)) throw new ArgumentNullException("repositoryJson");
 
-            return JsonConvert.DeserializeObject<Repository>(devHttpClientRepositoryJson);
+            return JsonConvert.DeserializeObject<Repository>(repositoryJson);
         }
     }
 }

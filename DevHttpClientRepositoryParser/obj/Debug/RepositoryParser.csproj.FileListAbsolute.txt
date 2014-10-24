@@ -4,3 +4,4 @@ C:\GSN\Microsoft\DevHttpClient\DevHttpClientRepositoryParser\bin\Debug\Newtonsof
 C:\GSN\Microsoft\DevHttpClient\DevHttpClientRepositoryParser\bin\Debug\Newtonsoft.Json.xml
 C:\GSN\Microsoft\DevHttpClient\DevHttpClientRepositoryParser\obj\Debug\DevHttpClientRepositoryParser.dll
 C:\GSN\Microsoft\DevHttpClient\DevHttpClientRepositoryParser\obj\Debug\DevHttpClientRepositoryParser.pdb
+C:\GSN\Microsoft\DevHttpClient\DevHttpClientRepositoryParser\obj\Debug\RepositoryParser.csprojResolveAssemblyReference.cache

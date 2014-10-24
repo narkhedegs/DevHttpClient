@@ -6,12 +6,12 @@ using NSpec;
 
 namespace DevHttpClient.Tests
 {
-    class dev_http_client_repository_parser_specifications : nspec
+    public class dev_http_client_repository_parser_specifications : nspec
     {
         private string _validDevHttpClientRepositoryJson;
         private IRepositoryParser _repositoryParser;
 
-        void when_parsing_dev_http_client_repository_json()
+        public void when_parsing_dev_http_client_repository_json()
         {
             before = () =>
             {
@@ -19,10 +19,12 @@ namespace DevHttpClient.Tests
                 _validDevHttpClientRepositoryJson = EmbeddedResourceHelper.GetEmbeddedResource("Data/sample.json");
             };
 
-            context["given null or empty devHttpClientRepositoryJson"] = () =>
-            {
-                it["should throw ArgumentNullException"] = expect<ArgumentNullException>(() => _repositoryParser.Parse(null));
-            };
+            context["given null or empty devHttpClientRepositoryJson"] =
+                () =>
+                {
+                    it["should throw ArgumentNullException"] =
+                        expect<ArgumentNullException>(() => _repositoryParser.Parse(null));
+                };
 
             context["given a valid devHttpClientRepositoryJson"] = () =>
             {

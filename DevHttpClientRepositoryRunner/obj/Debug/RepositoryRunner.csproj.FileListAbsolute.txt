@@ -1,9 +1,0 @@
-C:\GSN\Microsoft\DevHttpClient\DevHttpClientRepositoryRunner\bin\Debug\DevHttpClientRepositoryRunner.dll
-C:\GSN\Microsoft\DevHttpClient\DevHttpClientRepositoryRunner\bin\Debug\DevHttpClientRepositoryRunner.pdb
-C:\GSN\Microsoft\DevHttpClient\DevHttpClientRepositoryRunner\bin\Debug\DevHttpClientRepositoryParser.dll
-C:\GSN\Microsoft\DevHttpClient\DevHttpClientRepositoryRunner\bin\Debug\Newtonsoft.Json.dll
-C:\GSN\Microsoft\DevHttpClient\DevHttpClientRepositoryRunner\bin\Debug\DevHttpClientRepositoryParser.pdb
-C:\GSN\Microsoft\DevHttpClient\DevHttpClientRepositoryRunner\bin\Debug\Newtonsoft.Json.xml
-C:\GSN\Microsoft\DevHttpClient\DevHttpClientRepositoryRunner\obj\Debug\RepositoryRunner.csprojResolveAssemblyReference.cache
-C:\GSN\Microsoft\DevHttpClient\DevHttpClientRepositoryRunner\obj\Debug\DevHttpClientRepositoryRunner.dll
-C:\GSN\Microsoft\DevHttpClient\DevHttpClientRepositoryRunner\obj\Debug\DevHttpClientRepositoryRunner.pdb

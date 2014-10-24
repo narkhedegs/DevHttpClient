@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryParser", "DevHttp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevHttpClient.Tests", "DevHttpClient.Tests\DevHttpClient.Tests.csproj", "{4FAE4BF3-E82F-423C-A692-6D8CD0C26156}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryRunner", "DevHttpClientRepositoryRunner\RepositoryRunner.csproj", "{0BDE1421-128C-48D4-A3B9-2008B04F13CF}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{4FAE4BF3-E82F-423C-A692-6D8CD0C26156}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FAE4BF3-E82F-423C-A692-6D8CD0C26156}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FAE4BF3-E82F-423C-A692-6D8CD0C26156}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0BDE1421-128C-48D4-A3B9-2008B04F13CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0BDE1421-128C-48D4-A3B9-2008B04F13CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0BDE1421-128C-48D4-A3B9-2008B04F13CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0BDE1421-128C-48D4-A3B9-2008B04F13CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
