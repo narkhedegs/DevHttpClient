@@ -1,17 +1,13 @@
 ﻿using System;
 using DevHttpClient.DataObjects;
 using Newtonsoft.Json;
+using RestApiTester.Common;
 
 namespace DevHttpClient
 {
-    public interface IRepositoryParser
+    public class RepositoryParser : IRestRequestCollectionParser
     {
-        Repository Parse(string repositoryJson);
-    }
-
-    public class RepositoryParser : IRepositoryParser
-    {
-        public Repository Parse(string repositoryJson)
+        public IRestRequestCollection<IRestRequestCollectionItem> Parse(string repositoryJson)
         {
             if (string.IsNullOrEmpty(repositoryJson)) throw new ArgumentNullException("repositoryJson");
 

@@ -2,6 +2,7 @@ using System;
 using DevHttpClient.DataObjects;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using RestApiTester.Common;
 
 namespace DevHttpClient.JsonConverters
 {
@@ -35,7 +36,7 @@ namespace DevHttpClient.JsonConverters
 
         public override bool CanConvert(Type objectType)
         {
-            return objectType == typeof(Node);
+            return objectType == typeof(IRestRequestCollectionItem);
         }
     }
 }

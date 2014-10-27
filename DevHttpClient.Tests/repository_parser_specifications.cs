@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using DevHttpClient.DataObjects;
 using DevHttpClient.Tests.Helpers;
 using NSpec;
 using RestApiTester.Common;
@@ -10,7 +9,7 @@ namespace DevHttpClient.Tests
     public class repository_parser_specifications : nspec
     {
         private string _validDevHttpClientRepositoryJson;
-        private IRepositoryParser _repositoryParser;
+        private IRestRequestCollectionParser _repositoryParser;
 
         public void when_parsing_dev_http_client_repository_json()
         {
@@ -30,7 +29,7 @@ namespace DevHttpClient.Tests
 
             context["given a valid devHttpClientRepositoryJson"] = () =>
             {
-                Repository repository = null;
+                IRestRequestCollection<IRestRequestCollectionItem> repository = null;
                 IRestRequest request = null;
 
                 act = () => 
