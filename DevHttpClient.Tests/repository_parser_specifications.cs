@@ -29,7 +29,7 @@ namespace DevHttpClient.Tests
 
             context["given a valid devHttpClientRepositoryJson"] = () =>
             {
-                IRestRequestCollection<IRestRequestCollectionItem> repository = null;
+                IRestRequestCollection repository = null;
                 IRestRequest request = null;
 
                 act = () => 

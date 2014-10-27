@@ -7,7 +7,7 @@ namespace DevHttpClient
 {
     public class RepositoryParser : IRestRequestCollectionParser
     {
-        public IRestRequestCollection<IRestRequestCollectionItem> Parse(string repositoryJson)
+        public IRestRequestCollection Parse(string repositoryJson)
         {
             if (string.IsNullOrEmpty(repositoryJson)) throw new ArgumentNullException("repositoryJson");
 

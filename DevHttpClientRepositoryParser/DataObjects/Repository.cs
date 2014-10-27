@@ -5,7 +5,7 @@ using RestApiTester.Common;
 
 namespace DevHttpClient.DataObjects
 {
-    public class Repository : IRestRequestCollection<IRestRequestCollectionItem>
+    public class Repository : IRestRequestCollection
     {
         public string Id { get; set; }
         public string Name { get; set; }
