@@ -1,10 +1,16 @@
 ﻿using System.Collections.Generic;
+using Newtonsoft.Json;
+using RestApiTester.Common;
 
 namespace DevHttpClient.DataObjects
 {
-    public class Repository
+    public class Repository : IRestRequestCollection<Node>
     {
-        public int Version { get; set; }
-        public List<Node> Nodes { get; set; }
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+
+        [JsonProperty("nodes")]
+        public IEnumerable<Node> Items { get; set; }
     }
 }

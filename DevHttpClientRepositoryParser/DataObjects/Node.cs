@@ -1,29 +1,25 @@
 using System;
-using System.Collections.Generic;
+using DevHttpClient.JsonConverters;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using RestApiTester.Common;
 
 namespace DevHttpClient.DataObjects
 {
-    public class Node
+    [JsonConverter(typeof(NodeConverter))]
+    public class Node : IRestRequestCollectionItem
     {
         public string Id { get; set; }
-
-        [JsonProperty("lastModified")]
-        public DateTime? LastModifiedDateTime { get; set; }
-        
+        public string ParentId { get; set; }
         public string Name { get; set; }
+        public string Description { get; set; }
 
         [JsonConverter(typeof(StringEnumConverter))]
-        public NodeType Type { get; set; }
+        public RestRequestCollectionItemType Type { get; set; }
 
-        public List<Header> Headers { get; set; }
+        [JsonProperty("lastModified")]
+        public DateTime? UpdatedDateTime { get; set; }
 
-        [JsonConverter(typeof(MethodConverter))]
-        public string Method { get; set; }
-
-        public Body Body { get; set; }
-        public Uri Uri { get; set; }
-        public string ParentId { get; set; }
+        public IRestRequest Request { get; set; }
     }
 }

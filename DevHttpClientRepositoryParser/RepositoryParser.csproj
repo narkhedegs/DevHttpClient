@@ -32,7 +32,11 @@
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Newtonsoft.Json.6.0.5\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestApiTester.Common, Version=0.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\RestApiTester.Common.0.5.0.0\lib\net451\RestApiTester.Common.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,18 +47,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataObjects\Body.cs" />
-    <Compile Include="DataObjects\BodyType.cs" />
-    <Compile Include="DataObjects\NodeType.cs" />
     <Compile Include="DataObjects\Repository.cs" />
-    <Compile Include="DataObjects\Header.cs" />
     <Compile Include="DataObjects\Node.cs" />
-    <Compile Include="DataObjects\Query.cs" />
-    <Compile Include="DataObjects\QueryItem.cs" />
-    <Compile Include="DataObjects\Scheme.cs" />
-    <Compile Include="DataObjects\Uri.cs" />
+    <Compile Include="DataObjects\RestRequest.cs" />
+    <Compile Include="JsonConverters\BodyConverter.cs" />
+    <Compile Include="JsonConverters\HeadersConverter.cs" />
+    <Compile Include="JsonConverters\MethodConverter.cs" />
+    <Compile Include="JsonConverters\NodeConverter.cs" />
+    <Compile Include="JsonConverters\UrlConverter.cs" />
     <Compile Include="RepositoryParser.cs" />
-    <Compile Include="MethodConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
