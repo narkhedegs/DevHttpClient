@@ -1,7 +1,8 @@
 ﻿using System;
-using System.Linq;
+using DevHttpClient.DataObjects;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using RestApiTester.Common;
 
 namespace DevHttpClient.JsonConverters
 {
@@ -22,24 +23,18 @@ namespace DevHttpClient.JsonConverters
             }
 
             var jObject = JObject.Load(reader);
-            var scheme = jObject["scheme"].Value<string>("name");
-            var path = jObject.Value<string>("path");
-            var queryDelimiter = jObject["query"].Value<string>("delimiter");
-            var queryParameters = (from item in jObject["query"]["items"]
-                let isEnabled = item.Value<bool?>("enabled")
-                let name = item.Value<string>("name")
-                let value = item.Value<string>("value")
-                where isEnabled == null || isEnabled.Value
-                select new {Name = name, Value = value}).ToList();
-            var url = string.Format(@"{0}://{1}", scheme, path);
-
-            for (var i = 0; i < queryParameters.Count(); i++)
+            var url = new Url();
+            url.Scheme = jObject["scheme"].Value<string>("name");
+            url.Path = jObject.Value<string>("path");
+            url.QueryDelimiter = jObject["query"].Value<string>("delimiter");
+            foreach (var item in jObject["query"]["items"])
             {
-                var queryParameter = queryParameters[i];
-                url += "?" + queryParameter.Name + "=" + queryParameter.Value;
-                if (i != queryParameters.Count - 1)
+                var isEnabled = item.Value<bool?>("enabled");
+                var name = item.Value<string>("name");
+                var value = item.Value<string>("value");
+                if (isEnabled == null || isEnabled.Value)
                 {
-                    url += queryDelimiter;
+                    url.QueryParameters.Add(name,value);
                 }
             }
 
@@ -48,7 +43,7 @@ namespace DevHttpClient.JsonConverters
 
         public override bool CanConvert(Type objectType)
         {
-            return objectType == typeof (string);
+            return objectType == typeof (IUrl);
         }
     }
 }

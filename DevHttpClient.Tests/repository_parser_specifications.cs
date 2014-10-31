@@ -55,7 +55,12 @@ namespace DevHttpClient.Tests
                 };
                 it["should populate Method"] = () => request.Method.should_be(RestRequestMethod.Get);
                 it["should populate Body"] = () => request.Body.should_be("{\"_DiseaseRegistry\":\" \",\n \"_FirstName\":\"\",\n \"_Lastname\":\"\",\n \"_MemberId\":\"\",\n \"_NextApptDate\":null,\n \"_ProviderId\":0046,\n \"_staffkey\":666}");
-                it["should populate Url"] = () => request.Url.should_be("http://${URI}/WorkListService/WorkLists/12361712");
+                it["should populate Url"] = () =>
+                {
+                    request.Url.Scheme.should_be("http");
+                    request.Url.Path.should_be("${URI}/WorkListService/WorkLists/12361712");
+                    request.Url.QueryDelimiter.should_be("&amp;");
+                };
             };
         }
     }

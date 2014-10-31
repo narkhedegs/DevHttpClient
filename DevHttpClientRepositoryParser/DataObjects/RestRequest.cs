@@ -17,6 +17,6 @@ namespace DevHttpClient.DataObjects
         public string Body { get; set; }
 
         [JsonProperty("uri"),JsonConverter(typeof(UrlConverter))]
-        public string Url { get; set; }
+        public IUrl Url { get; set; }
     }
 }
