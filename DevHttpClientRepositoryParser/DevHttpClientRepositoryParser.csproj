@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4FAE4BF3-E82F-423C-A692-6D8CD0C26156}</ProjectGuid>
+    <ProjectGuid>{D2D90DB6-84ED-4872-9FE1-9AAE9981B8EF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DevHttpClient.Tests</RootNamespace>
-    <AssemblyName>DevHttpClient.Tests</AssemblyName>
+    <RootNamespace>RestApiTester.Parsers</RootNamespace>
+    <AssemblyName>RestApiTester.Parsers.DevHttpClientRepositoryParser</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,20 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Moq">
-      <HintPath>..\packages\Moq.4.2.1409.1722\lib\net40\Moq.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.6.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="NSpec">
-      <HintPath>..\packages\nspec.0.9.68\lib\NSpec.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="RestApiTester.Common">
+    <Reference Include="RestApiTester.Common, Version=0.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\RestApiTester.Common.0.8.0.0\lib\net451\RestApiTester.Common.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -55,21 +47,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DebuggerShim.cs" />
-    <Compile Include="repository_parser_specifications.cs" />
-    <Compile Include="Helpers\EmbeddedResourceHelper.cs" />
+    <Compile Include="BodyConverter.cs" />
+    <Compile Include="ConcreteTypeConverter.cs" />
+    <Compile Include="HeadersConverter.cs" />
+    <Compile Include="DevHttpClientRepositoryParser.cs" />
+    <Compile Include="MethodConverter.cs" />
+    <Compile Include="Node.cs" />
+    <Compile Include="NodeConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository.cs" />
+    <Compile Include="RestRequest.cs" />
+    <Compile Include="Url.cs" />
+    <Compile Include="UrlConverter.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
-    <EmbeddedResource Include="Data\sample-repository.json" />
+    <None Include="DevHttpClientRepositoryParser.nuspec" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DevHttpClientRepositoryParser\RepositoryParser.csproj">
-      <Project>{d2d90db6-84ed-4872-9fe1-9aae9981b8ef}</Project>
-      <Name>RepositoryParser</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

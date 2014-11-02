@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace DevHttpClient.JsonConverters
+namespace RestApiTester.Parsers
 {
-    public class HeadersConverter : JsonConverter
+    internal class HeadersConverter : JsonConverter
     {
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {

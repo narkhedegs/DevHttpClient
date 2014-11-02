@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryParser", "DevHttpClientRepositoryParser\RepositoryParser.csproj", "{D2D90DB6-84ED-4872-9FE1-9AAE9981B8EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevHttpClientRepositoryParser", "DevHttpClientRepositoryParser\DevHttpClientRepositoryParser.csproj", "{D2D90DB6-84ED-4872-9FE1-9AAE9981B8EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevHttpClient.Tests", "DevHttpClient.Tests\DevHttpClient.Tests.csproj", "{4FAE4BF3-E82F-423C-A692-6D8CD0C26156}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevHttpClientRepositoryParser.Specifications", "DevHttpClientRepositoryParser.Specifications\DevHttpClientRepositoryParser.Specifications.csproj", "{4FAE4BF3-E82F-423C-A692-6D8CD0C26156}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

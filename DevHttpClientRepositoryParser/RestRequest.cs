@@ -1,11 +1,10 @@
 ﻿using System.Collections.Generic;
-using DevHttpClient.JsonConverters;
 using Newtonsoft.Json;
 using RestApiTester.Common;
 
-namespace DevHttpClient.DataObjects
+namespace RestApiTester.Parsers
 {
-    public class RestRequest : IRestRequest
+    internal class RestRequest : IRestRequest
     {
         [JsonConverter(typeof(HeadersConverter))]
         public IDictionary<string, string> Headers { get; set; }

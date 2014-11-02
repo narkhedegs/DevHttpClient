@@ -1,13 +1,12 @@
 using System;
-using DevHttpClient.JsonConverters;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using RestApiTester.Common;
 
-namespace DevHttpClient.DataObjects
+namespace RestApiTester.Parsers
 {
     [JsonConverter(typeof(NodeConverter))]
-    public class Node : IRestRequestCollectionItem
+    internal class Node : IRestRequestCollectionItem
     {
         public string Id { get; set; }
         public string ParentId { get; set; }

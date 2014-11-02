@@ -2,9 +2,9 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace DevHttpClient.JsonConverters
+namespace RestApiTester.Parsers
 {
-    public class BodyConverter : JsonConverter
+    internal class BodyConverter : JsonConverter
     {
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {

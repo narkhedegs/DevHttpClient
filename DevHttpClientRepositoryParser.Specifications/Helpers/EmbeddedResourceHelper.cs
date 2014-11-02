@@ -1,7 +1,7 @@
 using System.IO;
 using System.Reflection;
 
-namespace DevHttpClient.Tests.Helpers
+namespace DevHttpClientRepositoryParser.Specifications.Helpers
 {
     public static class EmbeddedResourceHelper
     {

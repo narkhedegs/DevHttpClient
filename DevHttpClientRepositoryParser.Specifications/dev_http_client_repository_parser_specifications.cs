@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Linq;
-using DevHttpClient.Tests.Helpers;
+using DevHttpClientRepositoryParser.Specifications.Helpers;
 using NSpec;
 using RestApiTester.Common;
 
-namespace DevHttpClient.Tests
+namespace DevHttpClientRepositoryParser.Specifications
 {
-    public class repository_parser_specifications : nspec
+    public class dev_http_client_repository_parser_specifications : nspec
     {
         private string _validDevHttpClientRepositoryJson;
         private IRestRequestCollectionParser _repositoryParser;
@@ -15,7 +15,7 @@ namespace DevHttpClient.Tests
         {
             before = () =>
             {
-                _repositoryParser = new RepositoryParser();
+                _repositoryParser = new RestApiTester.Parsers.DevHttpClientRepositoryParser();
                 _validDevHttpClientRepositoryJson =
                     EmbeddedResourceHelper.GetEmbeddedResource("Data/sample-repository.json");
             };

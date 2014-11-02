@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using RestApiTester.Common;
 
-namespace DevHttpClient.DataObjects
+namespace RestApiTester.Parsers
 {
-    public class Url : IUrl
+    internal class Url : IUrl
     {
         public Url()
         {

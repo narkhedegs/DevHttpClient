@@ -1,11 +1,10 @@
 ﻿using System;
-using DevHttpClient.DataObjects;
 using Newtonsoft.Json;
 using RestApiTester.Common;
 
-namespace DevHttpClient
+namespace RestApiTester.Parsers
 {
-    public class RepositoryParser : IRestRequestCollectionParser
+    public class DevHttpClientRepositoryParser : IRestRequestCollectionParser
     {
         public IRestRequestCollection Parse(string repositoryJson)
         {

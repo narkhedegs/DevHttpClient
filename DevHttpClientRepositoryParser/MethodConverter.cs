@@ -1,13 +1,11 @@
 using System;
-using System.Collections.Generic;
-using DevHttpClient.DataObjects;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using RestApiTester.Common;
 
-namespace DevHttpClient.JsonConverters
+namespace RestApiTester.Parsers
 {
-    public class MethodConverter : JsonConverter
+    internal class MethodConverter : JsonConverter
     {
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
