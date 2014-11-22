@@ -23,17 +23,20 @@ namespace RestApiTester.Parsers
 
             var jObject = JObject.Load(reader);
             var url = new Url();
-            url.Scheme = jObject["scheme"].Value<string>("name");
+            url.Scheme = jObject["scheme"] != null ? jObject["scheme"].Value<string>("name") : string.Empty;
             url.Path = jObject.Value<string>("path");
-            url.QueryDelimiter = jObject["query"].Value<string>("delimiter");
-            foreach (var item in jObject["query"]["items"])
+            if (jObject["query"] != null)
             {
-                var isEnabled = item.Value<bool?>("enabled");
-                var name = item.Value<string>("name");
-                var value = item.Value<string>("value");
-                if (isEnabled == null || isEnabled.Value)
+                url.QueryDelimiter = jObject["query"].Value<string>("delimiter");
+                foreach (var item in jObject["query"]["items"])
                 {
-                    url.QueryParameters.Add(name,value);
+                    var isEnabled = item.Value<bool?>("enabled");
+                    var name = item.Value<string>("name");
+                    var value = item.Value<string>("value");
+                    if (isEnabled == null || isEnabled.Value)
+                    {
+                        url.QueryParameters.Add(name, value);
+                    }
                 }
             }
 
